@@ -724,6 +724,10 @@ html.cssanimations .box-a {
 	.profile {
 		padding-top: 10px;
 	}
+
+	.about-us h1 {
+		width: 250px;
+	}
 }
 
 
