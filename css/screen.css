@@ -412,6 +412,10 @@ html.cssanimations .box-a {
 	.profile:nth-child(3) {
 		padding-bottom: 25px;
 	}
+
+	.about-us h1 {
+		width: 285px;
+	}
 	
 	
 }
