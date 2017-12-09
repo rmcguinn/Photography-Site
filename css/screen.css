@@ -46,7 +46,7 @@
 /* End Custom Fonts */
 
 html {
-	background-color: #000;
+	background-color: #608699;
 	line-height: 1.7;
 }
 
@@ -65,6 +65,12 @@ body {
 h1, h2, h3, h4, h5, h6, p {
 	margin-top: 0;
 }
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Roboto', sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
 
 img {
 	max-width: 100%;
@@ -157,29 +163,33 @@ header p {
 
 /* Site Navigation */
 .site-nav {
-	margin-top: 20px;
+	/* margin-top: 20px; */
 }
 
 .site-nav ul {
 	margin: 0;
 	padding: 0;
-	position: absolute;
+	/* position: absolute;
 	left: 0;
-	right: 0;
+	right: 0; */
 }
 
 .site-nav li {
 	list-style: none;
 	float: left;
 	width: 16.6666666667%;
+	font-size: 110%;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
 	text-align: center;
+	box-sizing: border-box;
 	/* margin-right: 5px; */
 }
 
 .site-nav a {
 	display: block;
 	color: #fff;
-	padding: 10px 20px;
+	padding: 15px 20px;
 	background-color: black;
 	transition-property: color, background-color;
 	transition-duration: .4s;
@@ -222,8 +232,8 @@ header p {
 
 .content-area {
 	background-color: #fff;
-	padding-bottom: 30px;
-	padding-top: 40px;
+	padding-bottom: 36px;
+	/* padding-top: 40px; */
 }
 
 @media screen and (max-width: 767px) {
@@ -515,15 +525,14 @@ html.cssanimations .box-a {
 	background-color: #000;
 }
 
-/* Button A Style */  
-/* Needs Work */
-
+/* Button A Style */
 .btn-a {
-	padding: 6px 10px;
+	padding: 6px 15px;
 	border-radius: 5px;
 	font-weight: bold;
 	text-transform: uppercase;
-	background-color: #07a0d3dc;
+	background-color: #000;
+	border: 1px solid #fff;
 	color: #fff;
 	font-size: 84%;
 }
@@ -595,7 +604,7 @@ body {
 
 .about-us {
 	width: 100%;
-	border: 2px solid black;
+	border: 3px solid black;
 	box-sizing: border-box;
 	position: relative;
 	/* background: linear-gradient(purple, blue, red); */
@@ -795,21 +804,30 @@ footer ul {
 	display: inline-block;
 }
 
-footer a { text-decoration: none; color: #07a0d3; }
+footer a { 
+	display: inline-block;
+	text-decoration: none; 
+	color: #07a0d3;
+	font-size: 25px; 
+}
 
+/* Github social icon appeared smaller than the other due to the shape */
 
+#git {
+	font-size: 28px;
+}
 
 footer ul li {
 	display: block;
 	list-style: none;
 	float: left;
-	width: 35px;
-	height: 35px;
-	line-height: 35px;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
 	text-align: center;
 	background: #fff;
 	border-radius: 50%;
-	margin: 0px 15px;
+	margin: 0px 20px;
 	position: relative;
 	overflow: hidden;
 	font-size: 150%;
@@ -817,7 +835,6 @@ footer ul li {
 	transition: .5s ease-in-out;
 }
 
-/* Do I even need this? */
 
 ul li:before {
 	content: '';
@@ -857,6 +874,8 @@ ul li:hover a {
 	color: #fff;
 }
 
+/* *** Needs to max the height of the header */
+
 footer {
 	text-align: center;
 	font-size: 85%;
@@ -867,7 +886,7 @@ footer {
 }
 
 footer h5 {
-	font-size: 150%;
+	font-size: 175%;
 	margin-bottom: 10px;
 }
 
