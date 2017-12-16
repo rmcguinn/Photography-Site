@@ -61,7 +61,7 @@ img {
 
 a {
     z-index: 2;
-    font-size: 75px;
+    font-size: 3.5vw;
     transform: translate(-50%, -50%);
     position: absolute;
     left: 50%;
@@ -88,8 +88,8 @@ a {
 
 @media screen and (min-width: 940px) and (max-width: 1150px) {
     img {
-        height: auto;
-        width: 94vw;
+        height: 96vh;
+        width: auto;
     }
 }
 
@@ -114,6 +114,7 @@ a {
     }
 }
 
+
 /* p {
     text-align: center;
     font-size: 70px;
@@ -135,6 +136,7 @@ a {
 p a {
     color: #07a0d3;
     font-family: Pacifico, cursive;
+    text-decoration: none;
 }
 
 /* Original Color */
