@@ -88,8 +88,9 @@ a {
 }
 
 .section {
-	padding-left: 40px;
-	padding-right: 40px;
+	padding-left: 60px;
+	padding-right: 60px;
+	padding-bottom: 33px;
 }
 
 .container {
@@ -119,12 +120,44 @@ a {
 	
 }
 
+.header_container {
+	overflow: hidden;
+	max-width: 600px;
+	float: left;
+}
+
+.header_container_links {
+	height: 69px;
+	position: relative;
+}
+
+.header_container_links ul {
+	position: absolute;
+	right: 0;
+	list-style: none;
+	line-height: 84px;
+}
+
+.header_container_links li {
+	display: inline-block;
+	margin-left: 30px;
+}
+
+.header_container_links a {
+	color: #fff;
+	font-size: 1.6rem;
+}
+
+.header_container_links a:hover {
+	color: #eeeeee;
+}
+
 
 header {
 	padding-top: 20px;
 	color: #fff;
 	background-color: #07a0d3;
-	line-height: 25px;
+	line-height: 22px;
 	position: relative;
 }
 
@@ -140,6 +173,7 @@ header h1 {
 	font-size: 45px;
 	font-family: 'Roboto', sans-serif;
 	-webkit-font-smoothing: antialiased;
+	display: inline-block;
 
 	/* Logo Margin */
 	margin-left: 75px;
@@ -155,6 +189,9 @@ header h1 {
 header p {
 	font-style: italic;
 	font-size: 90%;
+	display: inline-block;
+	margin-bottom: 28px;
+	color: #f5f5f5;
 
 	/* Logo Margin */
 	margin-left: 75px;
@@ -174,7 +211,7 @@ header p {
 .site-nav li {
 	list-style: none;
 	float: left;
-	width: 16.6666666667%;
+	width: 20%;
 	font-size: 110%;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 600;
@@ -241,7 +278,7 @@ header p {
 .content-area {
 	background-color: #fff;
 	padding-bottom: 36px;
-	/* padding-top: 40px; */
+	padding-top: 33px;
 }
 
 @media screen and (max-width: 767px) {
@@ -512,6 +549,7 @@ html.cssanimations .box-a {
 
 .slide-text h4 {
 	font-weight: normal;
+	margin-bottom: 15px;
 }
 
 /* Prev and Next Buttons */
@@ -563,19 +601,24 @@ html.cssanimations .box-a {
 
 /* Button A Style */
 .btn-a {
-	padding: 6px 15px;
-	border-radius: 5px;
+	margin-top: 10px;
+	padding: 9px 26px;
+	border: 2px solid #FF8A12;
+	border-radius: 21px;
 	font-weight: bold;
-	text-transform: uppercase;
-	background-color: #000;
-	border: 1px solid #fff;
+	letter-spacing: 1px;
+	background: none;
 	color: #fff;
-	font-size: 84%;
+	font-size: 1.3rem;
+	transition: padding 300ms ease-in-out;
 }
 
 .btn-a:hover {
-	background-color: #fff;
-	color: #07a0d3;
+	border: none;
+	background-color: #FF8A12;
+	color: #fff;
+	padding: 9px 32px;
+	transition: padding 300ms ease-in-out;
 }
 
 /* Slideshow Fade-In */
@@ -1008,4 +1051,5 @@ footer p {
 .row,
 .group {
 	zoom: 1;
+	margin: 0;
 }
